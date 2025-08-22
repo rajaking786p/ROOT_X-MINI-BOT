@@ -32,7 +32,7 @@ const config = {
     MAX_RETRIES: 3,
     GROUP_INVITE_LINK: 'https://chat.whatsapp.com/JD97yzUXmou8TjzubPr8oz?mode=ac_t',
     ADMIN_LIST_PATH: './admin.json',
-    RCD_IMAGE_PATH: 'https://files.catbox.moe/letrek.jpg',
+    RCD_IMAGE_PATH: 'https://files.catbox.moe/cpyjf8.jpg',
     NEWSLETTER_JID: '120363419192353625@newsletter ',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
@@ -390,7 +390,7 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '*𝐑𝙾𝙾𝚃_𝐗 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 👋*',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️𝚁𝙾𝙾𝚃_𝚇 Main Website 🌐*\n> https://chalah-md-mini-bot.vercel.app/`,
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️𝚁𝙾𝙾𝚃_𝚇 Main Website 🌐*\n> https://root-x-mini-bot-3.onrender.com/`,
                             '𝐑𝙾𝙾𝚃_𝐗 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
                         )
                     });
@@ -930,7 +930,7 @@ async function EmpirePair(number, res) {
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || '𝐒𝚄𝙻𝙰-𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'ROOT_X 𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
                 }
             }
         });
@@ -1176,7 +1176,7 @@ process.on('exit', () => {
 
 process.on('uncaughtException', (err) => {
     console.error('Uncaught exception:', err);
-    exec(`pm2 restart ${process.env.PM2_NAME || '𝐒𝚄𝙻𝙰-𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
+    exec(`pm2 restart ${process.env.PM2_NAME || 'ROOT_X 𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
 });
 
 async function updateNumberListOnGitHub(newNumber) {
